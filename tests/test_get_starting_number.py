@@ -25,9 +25,7 @@ class Tests:
         """
 
         mock_data = {"input": ["foo", "bar", "0", "3", "1", "100"]}
-        call_counter = {
-            "input": 0,
-        }
+        call_counter = {"input": 0}
         # mock the input function
         self.mock_input(mock_data, call_counter, monkeypatch)
 

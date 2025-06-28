@@ -7,8 +7,7 @@ def sing(start):
         next_count = count - 1
         print(
             f"{count} bottle{'s' if count != 1 else ''} of beer on the wall, {count} bottle{'s' if count != 1 else ''} of beer.\n"
-            f"Take one down and pass it around,"
-            f"{next_count if next_count != 0 else 'no more'} bottle{'s' if count - 1 != 1 else ''} of beer on the wall.\n"
+            f"Take one down and pass it around, {next_count if next_count != 0 else 'no more'} bottle{'s' if next_count != 1 else ''} of beer on the wall.\n"
         )
         count -= 1 
    
